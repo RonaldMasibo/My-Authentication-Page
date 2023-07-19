@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <div class="container">
+        <h1>Welcome To</h1>
+        <h2>An Authentication</h2>
+        <h3>Example</h3>
+        <br><br>
+        <p class="lead">This Application is just<br>example of an Authentication<br>Page</p>
+        <br><br><br><br>
+        {% if session.logged_in == NULL %}
+            <a href="/register" class="btn btn-primary btn-lg">Register</a>
+            <a href="/login" class="btn btn-success btn-lg">Login</a>
+        {% endif %}
+    </div>
+{% endblock %}
